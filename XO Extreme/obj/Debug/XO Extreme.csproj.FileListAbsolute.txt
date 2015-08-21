@@ -1,0 +1,37 @@
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\bin\Debug\App.xbf
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\bin\Debug\MainPage.xbf
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\bin\Debug\XO Extreme.xr.xml
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\bin\Debug\XO Extreme.exe
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\bin\Debug\XO Extreme.pdb
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\bin\Debug\resources.pri
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\bin\Debug\AppxManifest.xml
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\bin\Debug\XO Extreme.build.appxrecipe
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\App.g.i.cs
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\App.g.cs
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\MainPage.g.i.cs
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\MainPage.g.cs
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\App.xaml
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\App.xbf
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\MainPage.xaml
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\MainPage.xbf
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\XO Extreme.exe
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\XO Extreme.pdb
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\priconfig.xml
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\priconfig.xml.intermediate
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\layout.resfiles
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\layout.resfiles.intermediate
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\resources.resfiles
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\resources.resfiles.intermediate
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\pri.resfiles
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\pri.resfiles.intermediate
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\qualifiers.txt
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\ProjectArchitectures.txt
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\bin\Debug\Game.xbf
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\Game.g.i.cs
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\Game.g.cs
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\Game.xaml
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\obj\Debug\Game.xbf
