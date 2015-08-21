@@ -1,1 +1,1 @@
-C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO Extreme\XO Extreme.csproj;neutral
+C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\XO Extreme\XO-Extreme\XO Extreme\XO Extreme.csproj;neutral
