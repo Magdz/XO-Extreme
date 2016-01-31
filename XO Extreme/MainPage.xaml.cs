@@ -22,7 +22,7 @@ namespace XO_Extreme
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public int GameType = 0;
+        public static int GameType { get; private set; } 
         public MainPage()
         {
             this.InitializeComponent();
