@@ -27,6 +27,8 @@ namespace XO_Extreme
         private bool GameEnded;
         private int Spaces;
         private int Player_Now;
+        private MiniMax CompuPlayer;
+
         public Game()
         {
             this.InitializeComponent();
@@ -45,51 +47,151 @@ namespace XO_Extreme
             Spaces = 9;
             Player_Now = 1;
             Win_Box.Text = "Player X Start";
+            CompuPlayer = new MiniMax();
+        }
+
+        private void AiAdapter()
+        {
+            char[,] Table = new char[3,3];
+            Table[0, 0] = detectCell(Cell00);
+            Table[0, 1] = detectCell(Cell01);
+            Table[0, 2] = detectCell(Cell02);
+            Table[1, 0] = detectCell(Cell10);
+            Table[1, 1] = detectCell(Cell11);
+            Table[1, 2] = detectCell(Cell12);
+            Table[2, 0] = detectCell(Cell20);
+            Table[2, 1] = detectCell(Cell21);
+            Table[2, 2] = detectCell(Cell22);
+            MiniMax.Player = 'o';
+            CompuPlayer.Ai(Table, 'o', 0);
+            if (CompuPlayer.move_x == 0)
+            {
+                if (CompuPlayer.move_y == 0)
+                {
+                    Cell00.Source = O_Player.Source;
+                }
+                else if (CompuPlayer.move_y == 1)
+                {
+                    Cell01.Source = O_Player.Source;
+                }
+                else
+                {
+                    Cell02.Source = O_Player.Source;
+                }
+            }
+            else if (CompuPlayer.move_x == 1)
+            {
+                if (CompuPlayer.move_y == 0)
+                {
+                    Cell10.Source = O_Player.Source;
+                }
+                else if (CompuPlayer.move_y == 1)
+                {
+                    Cell11.Source = O_Player.Source;
+                }
+                else
+                {
+                    Cell12.Source = O_Player.Source;
+                }
+            }
+            else
+            {
+                if (CompuPlayer.move_y == 0)
+                {
+                    Cell20.Source = O_Player.Source;
+                }
+                else if (CompuPlayer.move_y == 1)
+                {
+                    Cell21.Source = O_Player.Source;
+                }
+                else
+                {
+                    Cell22.Source = O_Player.Source;
+                }
+            }
+        }
+
+        private char detectCell(Image Cell)
+        {
+            if (Cell.Source == X_Player.Source) return 'x';
+            else if (Cell.Source == O_Player.Source) return 'o';
+            else return ' ';
         }
 
         private void Move_Played(Image Cell)
         {
-            bool Checker;
             if (Cell.Source != X_Player.Source && Cell.Source != O_Player.Source && !GameEnded)
             {
                 Win_Box.Text = " ";
-                Spaces--;
-                if (Player_Now == 1)
+                if (MainPage.GameType == 1)
                 {
-                    Cell.Source = X_Player.Source;
-                    Checker=Check(X_Player.Source);
-                    Player_Now = 2;
+                    bool play = true;
+                    while (play)
+                    {
+                        Spaces--;
+                        if (Player_Now == 1)
+                        {
+                            Cell.Source = X_Player.Source;
+                            Checker(X_Player.Source);
+                            if (Win_Box.Text != " ") play = false;
+                            Player_Now = 2;
+                        }
+                        else
+                        {
+                            AiAdapter();
+                            Checker(O_Player.Source);
+                            if (Win_Box.Text != " ") play = false;
+                            Player_Now = 1;
+                            play = false;
+                        }
+                    }
                 }
                 else
                 {
-                    Cell.Source = O_Player.Source;
-                    Checker=Check(O_Player.Source);
-                    Player_Now = 1;
-                }
-                if (Spaces == 0)
-                {
-                    Win_Box.Text = "Draw";
-                    GameEnded = true;
-                    Play_Again.IsEnabled = true;
-                }
-                if (Checker)
-                {
-                    GameEnded = true;
-                    Play_Again.IsEnabled = true;
-                    if (Player_Now == 2)
+                    Spaces--;
+                    if (Player_Now == 1)
                     {
-                        Win_Box.Text = "Player X Wins";
-                        X_Counter++;
-                        X_Score.Text = X_Counter.ToString();
-                        Player_Now = 1;
+                        Cell.Source = X_Player.Source;
+                        Checker(X_Player.Source);
+                        Player_Now = 2;
                     }
                     else
                     {
-                        Win_Box.Text = "Player O Wins";
-                        O_Counter++;
-                        O_Score.Text = O_Counter.ToString();
-                        Player_Now = 2;
+                        Cell.Source = O_Player.Source;
+                        Checker(O_Player.Source);
+                        Player_Now = 1;
                     }
+                }
+            }
+        }
+
+        private void Checker(ImageSource Source)
+        {
+            bool Checker;
+            Checker = Check(Source);
+            if (Spaces == 0)
+            {
+                Win_Box.Text = "Draw";
+                GameEnded = true;
+                Play_Again.IsEnabled = true;
+            }
+            if (Checker)
+            {
+                GameEnded = true;
+                Play_Again.IsEnabled = true;
+                if (Player_Now == 1)
+                {
+                    Win_Box.Text = "Player X Wins";
+                    X_Counter++;
+                    X_Score.Text = X_Counter.ToString();
+                    Player_Now = 1;
+                }
+                else
+                {
+                    Win_Box.Text = "Player O Wins";
+                    O_Counter++;
+                    O_Score.Text = O_Counter.ToString();
+                    Player_Now = 2;
                 }
             }
         }
@@ -196,7 +298,19 @@ namespace XO_Extreme
             GameEnded = false;
             Spaces = 9;
             if (Player_Now == 1) Win_Box.Text = "Player X Start";
-            else Win_Box.Text = "Player O Start";
+            else
+            {
+                Win_Box.Text = "Player O Start";
+                if (MainPage.GameType == 1)
+                {
+                    List<Image> Cells = new List<Image>(new Image[] { Cell00, Cell01, Cell02, Cell10, Cell11, Cell12, Cell20, Cell21, Cell22 });
+                    Random random = new Random();
+                    Image Cell = Cells[random.Next(0, 8)];
+                    Cell.Source = O_Player.Source;
+                    Player_Now = 1;
+                    Spaces--;
+                }
+            }
         }
     }
 }

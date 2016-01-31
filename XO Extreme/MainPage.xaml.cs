@@ -51,5 +51,11 @@ namespace XO_Extreme
             GameType = 2;
             this.Frame.Navigate(typeof(Game));
         }
+
+        private void One_Player_Click(object sender, RoutedEventArgs e)
+        {
+            GameType = 1;
+            this.Frame.Navigate(typeof(Game));
+        }
     }
 }

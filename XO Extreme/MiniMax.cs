@@ -8,9 +8,9 @@ namespace XO_Extreme
 {
     class MiniMax
     {
-        public char Player { set; get; }
-        int move_x { get; private set; }
-        int move_y { get; private set; }
+        public static char Player { set; get; }
+        public int move_x { get; private set; }
+        public int move_y { get; private set; }
 
 
         public int Ai(char[,] game, char gamePlay, int depth)
