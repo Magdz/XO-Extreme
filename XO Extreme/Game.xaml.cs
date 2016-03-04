@@ -225,49 +225,9 @@ namespace XO_Extreme
             return false;
         }
 
-        private void Cell00_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Cell_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Move_Played(Cell00);
-        }
-
-        private void Cell01_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Move_Played(Cell01);
-        }
-
-        private void Cell10_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Move_Played(Cell10);
-        }
-
-        private void Cell02_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Move_Played(Cell02);
-        }
-
-        private void Cell11_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Move_Played(Cell11);
-        }
-
-        private void Cell12_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Move_Played(Cell12);
-        }
-
-        private void Cell20_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Move_Played(Cell20);
-        }
-
-        private void Cell21_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Move_Played(Cell21);
-        }
-
-        private void Cell22_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Move_Played(Cell22);
+            Move_Played((Image)sender);
         }
 
         private void Back_Main_Menu(object sender, RoutedEventArgs e)
