@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="49193Magdz.XOExtreme" Publisher="CN=22BB7780-D12D-4938-A43B-A429B7641FA3" Version="1.1.0.0" />
+  <Identity Name="49193Magdz.XOExtreme" Publisher="CN=22BB7780-D12D-4938-A43B-A429B7641FA3" Version="1.2.0.1" />
   <mp:PhoneIdentity PhoneProductId="139f7d47-0e73-4b25-9d31-4b46574580be" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>XO Extreme</DisplayName>
